@@ -1,19 +1,19 @@
 {
   "name": "@dhlx/format-size-units",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "files": [
     "dist",
     "index.d.ts"
   ],
-  "main": "./dist/counter.umd.cjs",
-  "module": "./dist/counter.js",
-  "types": "./index.d.ts",
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/lib/main.d.ts",
   "exports": {
-    "types": "./index.d.ts",
-    "import": "./dist/counter.js",
-    "require": "./dist/counter.umd.cjs"
+    "types": "./dist/lib/main.d.ts",
+    "import": "./dist/index.js",
+    "require": "./dist/index.umd.cjs"
   },
   "scripts": {
     "dev": "vite",
@@ -25,5 +25,8 @@
     "prettier": "^3.3.3",
     "typescript": "^5.4.5",
     "vite": "^5.2.10"
+  },
+  "dependencies": {
+    "vite-plugin-dts": "^4.2.2"
   }
 }
